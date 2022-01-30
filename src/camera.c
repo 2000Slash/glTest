@@ -4,6 +4,8 @@
 
 Camera* camera_create() {
     Camera* cam = malloc(sizeof(Camera));
+    glm_vec3_zero(cam->pos);
+    glm_vec3_zero(cam->target);
     return cam;
 }
 
