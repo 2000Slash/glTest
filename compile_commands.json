@@ -1,0 +1,27 @@
+[
+{
+  "directory": "/home/nils/Desktop/opengl/build",
+  "command": "/usr/bin/cc  -I/home/nils/Desktop/opengl/include  -o CMakeFiles/Tutorial.dir/src/glad.c.o -c /home/nils/Desktop/opengl/src/glad.c",
+  "file": "/home/nils/Desktop/opengl/src/glad.c"
+},
+{
+  "directory": "/home/nils/Desktop/opengl/build",
+  "command": "/usr/bin/cc  -I/home/nils/Desktop/opengl/include  -o CMakeFiles/Tutorial.dir/src/main.c.o -c /home/nils/Desktop/opengl/src/main.c",
+  "file": "/home/nils/Desktop/opengl/src/main.c"
+},
+{
+  "directory": "/home/nils/Desktop/opengl/build",
+  "command": "/usr/bin/cc  -I/home/nils/Desktop/opengl/include  -o CMakeFiles/Tutorial.dir/src/window.c.o -c /home/nils/Desktop/opengl/src/window.c",
+  "file": "/home/nils/Desktop/opengl/src/window.c"
+},
+{
+  "directory": "/home/nils/Desktop/opengl/build",
+  "command": "/usr/bin/cc  -I/home/nils/Desktop/opengl/include  -o CMakeFiles/Tutorial.dir/src/shader.c.o -c /home/nils/Desktop/opengl/src/shader.c",
+  "file": "/home/nils/Desktop/opengl/src/shader.c"
+},
+{
+  "directory": "/home/nils/Desktop/opengl/build",
+  "command": "/usr/bin/cc  -I/home/nils/Desktop/opengl/include  -o CMakeFiles/Tutorial.dir/src/camera.c.o -c /home/nils/Desktop/opengl/src/camera.c",
+  "file": "/home/nils/Desktop/opengl/src/camera.c"
+}
+]

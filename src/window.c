@@ -23,5 +23,6 @@ GLFWwindow *initialize_window()
     }
 
     glViewport(0, 0, 800, 600);
+    glEnable(GL_DEPTH_TEST);
     return window;
 }
