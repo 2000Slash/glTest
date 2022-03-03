@@ -33,6 +33,12 @@ int compileShader(GLenum shader_type, char* shader_file) {
     return shader;
 }
 
+void shader_bind_float(int program, float value, char* name) {
+    glUseProgram(program);
+    unsigned int transformLoc = glGetUniformLocation(program, name);
+    glUniform1f(transformLoc, value);
+}
+
 void shader_bind_mat4(int program, mat4 mat, char* name) {
     glUseProgram(program);
     unsigned int transformLoc = glGetUniformLocation(program, name);
@@ -40,9 +46,9 @@ void shader_bind_mat4(int program, mat4 mat, char* name) {
 
 }
 
-int shader_create() {
-    int vertex = compileShader( GL_VERTEX_SHADER, "vertex.shader");
-    int fragment = compileShader(GL_FRAGMENT_SHADER, "fragment.shader");
+int shader_create(char* fragment_name) {
+    int vertex = compileShader( GL_VERTEX_SHADER, "default.vertex");
+    int fragment = compileShader(GL_FRAGMENT_SHADER, fragment_name);
 
     int program = glCreateProgram();
     glAttachShader(program, vertex);
